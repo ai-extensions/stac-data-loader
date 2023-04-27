@@ -6,6 +6,7 @@ Changes
 
 - Add sample Notebook with STAC search and data loading using Land-Cover imagery data catalogued on
   Microsoft Planetary Computer server, and provided through COG assets from NRCan's AWS servers.
+- Add sample data loading iterator of Land-Cover chips using `xbatcher` and `torchdata` Data-Pipes.
 
 [0.1.0](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader/-/tree/0.1.0) (2023-04-25)
 -------------------------------------------------------------------------------------------------------------

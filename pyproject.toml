@@ -17,6 +17,7 @@ pystac-client = "~0.4.0"
 torchdata = "^0.6.0"
 zen3geo = "^0.6.0"
 planetary-computer = "^0.5.1"
+xbatcher = "^0.3.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.3.1"
