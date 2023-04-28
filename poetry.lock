@@ -518,6 +518,7 @@ click = ">=7.0"
 cloudpickle = ">=1.1.1"
 fsspec = ">=0.6.0"
 importlib-metadata = ">=4.13.0"
+numpy = {version = ">=1.21", optional = true, markers = "extra == \"array\""}
 packaging = ">=20.0"
 partd = ">=1.2.0"
 pyyaml = ">=5.3.1"
@@ -2816,6 +2817,27 @@ files = [
 ]
 
 [[package]]
+name = "stackstac"
+version = "0.4.3"
+description = "Load a STAC collection into xarray with dask"
+category = "main"
+optional = false
+python-versions = ">=3.8,<4.0"
+files = [
+    {file = "stackstac-0.4.3-py3-none-any.whl", hash = "sha256:eea5aa1bb6d6575e65d48f5ae0650607408130bd3a601fbd5b1e6c2d028b77b4"},
+    {file = "stackstac-0.4.3.tar.gz", hash = "sha256:2a4137f590ab005e709078da199d666d2e357811abb8ea508c1e9d3b876cd76f"},
+]
+
+[package.dependencies]
+dask = {version = ">=2022.1.1", extras = ["array"]}
+pyproj = ">=3.0.0,<4.0.0"
+rasterio = ">=1.3.0,<2.0.0"
+xarray = ">=0.18"
+
+[package.extras]
+viz = ["Pillow (>=9.0.1,<10.0.0)", "aiohttp (>=3.7.4,<4.0.0)", "cachetools (>=4.2.2,<5.0.0)", "distributed (>=2022.1.1)", "ipyleaflet (>=0.13.6,<1.0.0)", "ipywidgets (>=7.6.3,<8.0.0)", "matplotlib (>=3.4.1)", "mercantile (>=1.1.6,<2.0.0)", "scipy (>=1.6.1,<2.0.0)"]
+
+[[package]]
 name = "starlette"
 version = "0.26.1"
 description = "The little ASGI library that shines."
@@ -3550,4 +3572,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "1f24bbbbf3114ee56953f6b891c793da659933f38c5d040a96935e72ce42b206"
+content-hash = "06e8ec20c8bb46364be4c7ab639cfc31e104a5297a08ed3a23bbf4218f910286"
