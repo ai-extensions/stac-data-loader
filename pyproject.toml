@@ -19,6 +19,7 @@ zen3geo = "^0.6.0"
 planetary-computer = "^0.5.1"
 xbatcher = "^0.3.0"
 stackstac = "^0.4.3"
+graphviz = "^0.20.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.3.1"
