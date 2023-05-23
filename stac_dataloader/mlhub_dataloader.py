@@ -5,6 +5,7 @@ from typing import Any, Callable, Dict, List, Literal, Optional, Sequence, Tuple
 from typing_extensions import NotRequired
 
 from rasterio.crs import CRS
+from rasterio.warp import transform_geom
 from torchgeo.datasets import BoundingBox, RasterDataset
 from radiant_mlhub import Dataset, DownloadIfExistsOpts
 
@@ -65,7 +66,7 @@ class MLHubDataset(RasterDataset):
                 Bands to return (defaults to all bands)
             intersects_bbox: Only items that intersect these coordinates/date-times
             will be selected from the MLHub Collections.
-                Area-of-Interest (AOI) coordinates must be provided in CRS EPSG:4326.
+                Area-of-Interest (AOI) coordinates are assumed in CRS EPSG:4326 unless ``crs`` is specified.
                 Time-of-Interest (TOI) date-times must be provided using UTC-0 timestamp values.
             intersects_geojson: Alternate method to specify one or multiple Area-of-Interest (AOI)
             using GeoJSON coordinates.
@@ -98,6 +99,10 @@ class MLHubDataset(RasterDataset):
                 intersects_bbox.maxx,
                 intersects_bbox.maxy,
             ]
+            # MLHub requires EPSG:4326, adjust CRS as necessary
+            crs_epsg_4326 = CRS({"init": "EPSG:4326"})
+            if crs and crs != crs_epsg_4326:
+                intersects["bbox"] = transform_geom(crs, crs_epsg_4326, intersects["bbox"])
             intersects["datetime"] = (
                 datetime.fromtimestamp(intersects_bbox.mint),
                 datetime.fromtimestamp(intersects_bbox.maxt),
@@ -128,4 +133,14 @@ class MLHubDataset(RasterDataset):
         )
 
     def __getitem__(self, query: BoundingBox) -> Dict[str, Any]:
-        pass
+        """Retrieve image/mask and metadata indexed by query.
+
+        Args:
+            query: (minx, maxx, miny, maxy, mint, maxt) coordinates to index
+
+        Returns:
+            sample of image/mask and metadata at that index
+
+        Raises:
+            IndexError: if query is not found in the index
+        """
