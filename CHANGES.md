@@ -4,6 +4,12 @@ Changes
 [Latest](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader)
 -------------------------------------------------------------------------------------------------------------
 
+[//]: <> (Remove when new items added)
+- No changes recorded yet.
+
+[0.2.0](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader/-/tree/0.2.0) (2023-05-25)
+-------------------------------------------------------------------------------------------------------------
+
 - Add sample Notebook with STAC search and data loading using Land-Cover annotated data catalogued on
   [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/dataset) STAC dataset server,
   and provided through COG assets from NRCan's AWS servers. Use Landsat imagery as reference for training.
