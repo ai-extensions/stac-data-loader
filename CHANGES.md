@@ -4,8 +4,10 @@ Changes
 [Latest](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader)
 -------------------------------------------------------------------------------------------------------------
 
-[//]: <> (Remove when new items added)
-- No changes recorded yet.
+- Fix erroneously named sections in Markdown Cells of [`notebooks/stac_eurosat.ipynb`](notebooks/stac_eurosat.ipynb).
+- Fix missing bump versioning of the [`stac_dataloader`](stac_dataloader) package in [`pyproject.toml`](pyproject.toml).
+- Regroup and reuse common typing definitions in [`stac_dataloader/typedef.py`](stac_dataloader/typedef.py).
+- Fix erroneous dependency packages.
 
 [0.3.0](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader/-/tree/0.3.0) (2023-05-30)
 -------------------------------------------------------------------------------------------------------------

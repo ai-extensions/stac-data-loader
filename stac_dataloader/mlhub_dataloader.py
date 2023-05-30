@@ -1,30 +1,14 @@
 import os
 import shutil
 from datetime import datetime
-from typing import Any, Callable, Dict, List, Literal, Optional, Sequence, Tuple, TypedDict, Union
-from typing_extensions import NotRequired
+from typing import Any, Callable, Dict, List, Optional, Sequence, Tuple, Union
 
 from rasterio.crs import CRS
 from rasterio.warp import transform_geom
 from torchgeo.datasets import BoundingBox, RasterDataset
 from radiant_mlhub import Dataset, DownloadIfExistsOpts
 
-
-GeometryTypes = Literal["Point", "LineString", "Polygon", "MultiPoint", "MultiLineString", "MultiPolygon"]
-Geometry = TypedDict("Geometry", {
-    "type": GeometryTypes,
-    "coordinates": List[Union[float, int]],
-})
-GeoFeature = TypedDict("GeoFeature", {
-    "type": Literal["Feature"],
-    "geometry": Geometry,
-    "properties": NotRequired[Dict[str, Any]],
-})
-GeoFeatureCollection = TypedDict("GeoFeatureCollection", {
-    "type": Literal["FeatureCollection"],
-    "features": List[GeoFeature],
-})
-GeoJSON = Union[GeoFeatureCollection, GeoFeature]
+from stac_dataloader.typedef import GeoJSON
 
 
 class MLHubDataset(RasterDataset):
