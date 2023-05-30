@@ -1,14 +1,17 @@
-from typing import Any, Callable, Dict, List, Optional, Sequence, Union
+import os
+import shutil
+from datetime import datetime
+from typing import Any, Callable, Dict, List, Optional, Sequence, Tuple, Union
 
 from rasterio.crs import CRS
-from torchgeo.datasets import BoundingBox
+from rasterio.warp import transform_geom
+from torchgeo.datasets import BoundingBox, RasterDataset
 from radiant_mlhub import Dataset, DownloadIfExistsOpts
 
-from stac_dataloader.generic import STACDataset
-from stac_dataloader.typedef import GeoJSON, GeoSample, TemporalInterval
+from stac_dataloader.typedef import GeoJSON
 
 
-class MLHubDataset(STACDataset):
+class MLHubDataset(RasterDataset):
     def __init__(
         self,
         mlhub_dataset: Union[str, List[str]],
@@ -19,7 +22,7 @@ class MLHubDataset(STACDataset):
         bands: Optional[Sequence[str]] = None,
         intersects_bbox: Optional[BoundingBox] = None,
         intersects_geojson: Optional[GeoJSON] = None,
-        intersects_interval: Optional[TemporalInterval] = None,
+        intersects_datetimes: Optional[Tuple[datetime, datetime]] = None,
         collection_filter: Optional[List[str]] = None,
         validate_assets: bool = False,
         transforms: Optional[Callable[[Dict[str, Any]], Dict[str, Any]]] = None,
@@ -45,14 +48,14 @@ class MLHubDataset(STACDataset):
                 (defaults to the resolution of the first file found)
             bands:
                 Bands to return (defaults to all bands)
-            intersects_bbox:
-                Only items that intersect these coordinates/date-times will be selected from the MLHub Collections.
+            intersects_bbox: Only items that intersect these coordinates/date-times
+            will be selected from the MLHub Collections.
                 Area-of-Interest (AOI) coordinates are assumed in CRS EPSG:4326 unless ``crs`` is specified.
                 Time-of-Interest (TOI) date-times must be provided using UTC-0 timestamp values.
             intersects_geojson: Alternate method to specify one or multiple Area-of-Interest (AOI)
             using GeoJSON coordinates.
                 Only items that intersect these coordinates will be selected from the MLHub Collections.
-            intersects_interval:
+            intersects_datetimes:
                 Alternate method to ``intersects_bbox`` to specify Time-of-Interest (TOI) using a date-time range.
                 Only items that intersect this date-time interval will be selected from the MLHub Collections.
             collection_filter:
@@ -72,34 +75,48 @@ class MLHubDataset(STACDataset):
         Raises:
             FileNotFoundError: if no files are found in ``root``
         """
-        self.mlhub_dataset = mlhub_dataset
-        self.mlhub_api_key = mlhub_api_key
-        self.dataset = None
+        intersects = {}
+        if intersects_bbox:
+            intersects["bbox"] = [
+                intersects_bbox.minx,
+                intersects_bbox.miny,
+                intersects_bbox.maxx,
+                intersects_bbox.maxy,
+            ]
+            # MLHub requires EPSG:4326, adjust CRS as necessary
+            crs_epsg_4326 = CRS({"init": "EPSG:4326"})
+            if crs and crs != crs_epsg_4326:
+                intersects["bbox"] = transform_geom(crs, crs_epsg_4326, intersects["bbox"])
+            intersects["datetime"] = (
+                datetime.fromtimestamp(intersects_bbox.mint),
+                datetime.fromtimestamp(intersects_bbox.maxt),
+            )
+        if intersects_geojson:
+            intersects["intersects"] = intersects_geojson
+        if intersects_datetimes:
+            intersects["datetime"] = intersects_datetimes
+        path = os.path.abspath(root)
+        if not cache and os.path.isdir(path):
+            shutil.rmtree(path)
+        os.makedirs(path, exist_ok=True)
+        self.dataset = Dataset.fetch(mlhub_dataset, api_key=mlhub_api_key)
+        self.dataset.download(
+            path,
+            catalog_only=False,
+            if_exists=DownloadIfExistsOpts.resume if validate_assets else DownloadIfExistsOpts.skip,
+            collection_filter=collection_filter,
+            **intersects,
+        )
         super().__init__(
             root=root,
             crs=crs,
             res=res,
             bands=bands,
-            intersects_bbox=intersects_bbox,
-            intersects_geojson=intersects_geojson,
-            intersects_interval=intersects_interval,
-            collection_filter=collection_filter,
-            validate_assets=validate_assets,
             transforms=transforms,
             cache=cache,
         )
 
-    def prepare_dataset(self) -> None:
-        self.dataset = Dataset.fetch(self.mlhub_dataset, api_key=self.mlhub_api_key)
-        self.dataset.download(
-            self.path,
-            catalog_only=False,
-            if_exists=DownloadIfExistsOpts.resume if self.validate_assets else DownloadIfExistsOpts.skip,
-            collection_filter=self.collection_filter,
-            **self.intersects,
-        )
-
-    def __getitem__(self, query: BoundingBox) -> GeoSample:
+    def __getitem__(self, query: BoundingBox) -> Dict[str, Any]:
         """Retrieve image/mask and metadata indexed by query.
 
         Args:
