@@ -4,8 +4,10 @@ Changes
 [Latest](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader)
 -------------------------------------------------------------------------------------------------------------
 
-[//]: <> (Remove when new items added)
-- No changes recorded yet.
+- Add notebook to convert [EuroSAT](https://github.com/phelber/EuroSAT) dataset obtained through
+  [torchgeo.datasets.EuroSAT](https://torchgeo.readthedocs.io/en/stable/api/datasets.html#torchgeo.datasets.EuroSAT)
+  into STAC Catalog, Collections, Items and Assets using the STAC [Label](https://github.com/stac-extensions/label)
+  extension to provide annotated Land-Cover samples over Sentinel-2 imagery.
 
 [0.2.0](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader/-/tree/0.2.0) (2023-05-25)
 -------------------------------------------------------------------------------------------------------------
