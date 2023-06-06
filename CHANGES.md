@@ -4,6 +4,12 @@ Changes
 [Latest](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader)
 -------------------------------------------------------------------------------------------------------------
 
+[//]: <> (Remove when new items added)
+- No changes recorded yet.
+
+[0.3.2](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader/-/tree/0.3.2) (2023-06-06)
+-------------------------------------------------------------------------------------------------------------
+
 - Fix invalid check of the `EuroSAT` subclass instance to decide between the `subset` or `full` data sub-directory.
 
 [0.3.1](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader/-/tree/0.3.1) (2023-05-30)

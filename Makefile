@@ -7,7 +7,7 @@ MAKEFILE_NAME := $(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST))
 # Application
 PROJECT_NAME    := stac-dataloader
 PROJECT_ROOT    := $(abspath $(lastword $(MAKEFILE_NAME))/..)
-PROJECT_VERSION := 0.3.1
+PROJECT_VERSION := 0.3.2
 
 .DEFAULT_GOAL := help
 
