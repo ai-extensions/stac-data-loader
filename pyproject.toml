@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "stac-dataloader"
-version = "0.3.2"
+version = "0.3.3"
 description = "Dataset interfaces for loading STAC references for Machine Learning pipelines."
 authors = ["Francis Charette-Migneault <francis.charette.migneault@crim.ca>"]
 license = "MIT"

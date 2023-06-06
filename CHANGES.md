@@ -4,6 +4,12 @@ Changes
 [Latest](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader)
 -------------------------------------------------------------------------------------------------------------
 
+[//]: <> (Remove when new items added)
+- No changes recorded yet.
+
+[0.3.3](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader/-/tree/0.3.3) (2023-06-06)
+-------------------------------------------------------------------------------------------------------------
+
 - Add the `EuroSAT100` subset as example with STAC definitions and associated imagery and annotation assets.
 - Add the GitHub tag version as the `version` field for version control of STAC components.
 - Use the published GitHub [ai-extensions/stac-data-loader](https://github.com/ai-extensions/stac-data-loader)
