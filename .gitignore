@@ -200,9 +200,6 @@ cython_debug/
 Makefile.*
 
 ### Project
-**/data/
-!data/
-data/*
-!data/annotations.geojson
+# 'data/.gitignore'
 outputs/
 **/outputs/
