@@ -1,0 +1,20 @@
+# Ignore everything
+*/
+
+# Unignore example subset
+!.gitignore
+!annotations.geojson
+!EuroSAT/
+!EuroSAT/README.md
+!EuroSAT/data/
+!EuroSAT/data/subset/
+!EuroSAT/data/subset/*
+!EuroSAT/data/subset/**/*
+!EuroSAT/stac/
+!EuroSAT/stac/subset/
+!EuroSAT/stac/subset/*
+!EuroSAT/stac/subset/**/*
+
+# Ignore temporary files from data-loader download
+**/*.zip
+**/*.txt

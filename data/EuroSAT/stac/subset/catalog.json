@@ -1,0 +1,37 @@
+{
+  "id": "example",
+  "type": "Catalog",
+  "title": "Example STAC Catalog",
+  "stac_version": "1.0.0",
+  "description": "Example catalog with annotated label collections.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.3.3/data/EuroSAT/stac/subset/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.3.3/data/EuroSAT/stac/subset/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "child",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.3.3/data/EuroSAT/stac/subset/train/collection.json",
+      "type": "application/json",
+      "title": "EuroSAT STAC Collection with samples from 'train' split."
+    },
+    {
+      "rel": "child",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.3.3/data/EuroSAT/stac/subset/validate/collection.json",
+      "type": "application/json",
+      "title": "EuroSAT STAC Collection with samples from 'validate' split."
+    },
+    {
+      "rel": "child",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.3.3/data/EuroSAT/stac/subset/test/collection.json",
+      "type": "application/json",
+      "title": "EuroSAT STAC Collection with samples from 'test' split."
+    }
+  ]
+}
