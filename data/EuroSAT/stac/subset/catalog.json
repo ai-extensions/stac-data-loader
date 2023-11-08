@@ -7,31 +7,34 @@
   "links": [
     {
       "rel": "root",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.3.3/data/EuroSAT/stac/subset/catalog.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/catalog.json",
       "type": "application/json"
     },
     {
       "rel": "self",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.3.3/data/EuroSAT/stac/subset/catalog.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/catalog.json",
       "type": "application/json"
     },
     {
       "rel": "child",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.3.3/data/EuroSAT/stac/subset/train/collection.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/train/collection.json",
       "type": "application/json",
-      "title": "EuroSAT STAC Collection with samples from 'train' split."
+      "title": "EuroSAT STAC Collection with samples from 'train' split.",
+      "ml-aoi:split": "train"
     },
     {
       "rel": "child",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.3.3/data/EuroSAT/stac/subset/validate/collection.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/validate/collection.json",
       "type": "application/json",
-      "title": "EuroSAT STAC Collection with samples from 'validate' split."
+      "title": "EuroSAT STAC Collection with samples from 'validate' split.",
+      "ml-aoi:split": "validate"
     },
     {
       "rel": "child",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.3.3/data/EuroSAT/stac/subset/test/collection.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/test/collection.json",
       "type": "application/json",
-      "title": "EuroSAT STAC Collection with samples from 'test' split."
+      "title": "EuroSAT STAC Collection with samples from 'test' split.",
+      "ml-aoi:split": "test"
     }
   ]
 }
