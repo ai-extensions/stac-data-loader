@@ -180,7 +180,7 @@
   },
   "collection": "EuroSAT-subset-train",
   "properties": {
-    "datetime": "2023-11-08T03:49:59.305709+00:00",
+    "datetime": "2023-11-10T01:51:25.314337+00:00",
     "license": "MIT",
     "version": "0.4.0",
     "label:properties": [
