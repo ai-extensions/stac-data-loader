@@ -4,6 +4,12 @@ Changes
 [Latest](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader)
 -------------------------------------------------------------------------------------------------------------
 
+[//]: <> (Remove when new items added)
+- No changes recorded yet.
+
+[0.4.0](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader/-/tree/0.4.0) (2023-11-09)
+-------------------------------------------------------------------------------------------------------------
+
 - Replace invalid STAC Collection `properties` by corresponding `summaries` definitions in `EuroSAT` notebook.
 - Use an updated (patch) ML-AOI STAC Extension JSON schema to allow `ml-aoi` references in STAC Collections
   (relates to [stac-extensions/ml-aoi#5](https://github.com/stac-extensions/ml-aoi/issues/5)).
