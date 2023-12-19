@@ -23,24 +23,24 @@
     "coordinates": [
       [
         [
-          4.511329939400049,
-          0.0004468586298031976
+          8.240199434099955,
+          49.544291505510124
         ],
         [
-          4.511329939400018,
-          0.0004469112176472023
+          8.240199434099955,
+          49.55012204631039
         ],
         [
-          4.511329859475179,
-          0.0004469112175979303
+          8.231278253108437,
+          49.55012204631039
         ],
         [
-          4.511329859475212,
-          0.00044685862975393136
+          8.231278253108437,
+          49.544291505510124
         ],
         [
-          4.511329939400049,
-          0.0004468586298031976
+          8.240199434099955,
+          49.544291505510124
         ]
       ]
     ]
@@ -48,17 +48,17 @@
   "assets": {
     "labels": {
       "title": "Labels for image Highway_34 with Highway class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/label/Highway/Highway_34.geojson",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/label/Highway/Highway_34.geojson",
       "type": "application/geo+json",
       "roles": [
         "data"
       ],
-      "file:size": 753,
+      "file:size": 735,
       "ml-aoi:role": "label"
     },
     "raster": {
       "title": "Raster Highway_34 with Highway class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/Highway/Highway_34.tif",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/Highway/Highway_34.tif",
       "type": "image/tiff; application=geotiff",
       "raster:bands": [
         {
@@ -149,7 +149,7 @@
     },
     "thumbnail": {
       "title": "Preview of Highway_34.",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/Highway/Highway_34.png",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/Highway/Highway_34.png",
       "type": "image/png",
       "roles": [
         "thumbnail",
@@ -180,9 +180,9 @@
   },
   "collection": "EuroSAT-subset-train",
   "properties": {
-    "datetime": "2023-11-10T01:51:22.325872+00:00",
+    "datetime": "2023-12-19T16:11:17.451880+00:00",
     "license": "MIT",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "label:properties": [
       "class"
     ],
@@ -306,13 +306,13 @@
   "links": [
     {
       "title": "Preview of Highway_34.",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/Highway/Highway_34.png",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/Highway/Highway_34.png",
       "type": "image/png",
       "rel": "thumbnail"
     },
     {
       "title": "Raster Highway_34 with Highway class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/Highway/Highway_34.tif",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/Highway/Highway_34.tif",
       "type": "image/tiff; application=geotiff",
       "rel": "source",
       "label:assets": [
@@ -323,33 +323,33 @@
     },
     {
       "title": "Raster Highway_34 with Highway class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/Highway/Highway_34.tif",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/Highway/Highway_34.tif",
       "type": "image/tiff; application=geotiff",
       "rel": "derived_from",
       "ml-aoi:role": "feature"
     },
     {
       "rel": "root",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/catalog.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/catalog.json",
       "type": "application/json"
     },
     {
       "rel": "parent",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/train/collection.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/train/collection.json",
       "type": "application/json",
       "title": "EuroSAT STAC Collection with samples from 'train' split.",
       "ml-aoi:split": "train"
     },
     {
       "rel": "collection",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/train/collection.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/train/collection.json",
       "type": "application/json",
       "title": "EuroSAT STAC Collection with samples from 'train' split.",
       "ml-aoi:split": "train"
     },
     {
       "rel": "self",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/train/item-21.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/train/item-21.json",
       "type": "application/geo+json"
     }
   ]

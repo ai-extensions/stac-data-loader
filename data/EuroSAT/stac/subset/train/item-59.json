@@ -23,24 +23,24 @@
     "coordinates": [
       [
         [
-          -1.4887081052358777,
-          0.00046702817795510635
+          3.993672523068202,
+          51.7805405579731
         ],
         [
-          -1.4887081052359101,
-          0.0004670807596867792
+          3.993672523068202,
+          51.78637042139037
         ],
         [
-          -1.4887081894876857,
-          0.0004670807596324951
+          3.9842683707499345,
+          51.78637042139037
         ],
         [
-          -1.488708189487653,
-          0.0004670281779008284
+          3.9842683707499345,
+          51.7805405579731
         ],
         [
-          -1.4887081052358777,
-          0.00046702817795510635
+          3.993672523068202,
+          51.7805405579731
         ]
       ]
     ]
@@ -48,17 +48,17 @@
   "assets": {
     "labels": {
       "title": "Labels for image SeaLake_984 with SeaLake class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/label/SeaLake/SeaLake_984.geojson",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/label/SeaLake/SeaLake_984.geojson",
       "type": "application/geo+json",
       "roles": [
         "data"
       ],
-      "file:size": 763,
+      "file:size": 731,
       "ml-aoi:role": "label"
     },
     "raster": {
       "title": "Raster SeaLake_984 with SeaLake class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/SeaLake/SeaLake_984.tif",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/SeaLake/SeaLake_984.tif",
       "type": "image/tiff; application=geotiff",
       "raster:bands": [
         {
@@ -149,7 +149,7 @@
     },
     "thumbnail": {
       "title": "Preview of SeaLake_984.",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/SeaLake/SeaLake_984.png",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/SeaLake/SeaLake_984.png",
       "type": "image/png",
       "roles": [
         "thumbnail",
@@ -180,9 +180,9 @@
   },
   "collection": "EuroSAT-subset-train",
   "properties": {
-    "datetime": "2023-11-10T01:51:25.579913+00:00",
+    "datetime": "2023-12-19T16:11:20.577804+00:00",
     "license": "MIT",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "label:properties": [
       "class"
     ],
@@ -306,13 +306,13 @@
   "links": [
     {
       "title": "Preview of SeaLake_984.",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/SeaLake/SeaLake_984.png",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/SeaLake/SeaLake_984.png",
       "type": "image/png",
       "rel": "thumbnail"
     },
     {
       "title": "Raster SeaLake_984 with SeaLake class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/SeaLake/SeaLake_984.tif",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/SeaLake/SeaLake_984.tif",
       "type": "image/tiff; application=geotiff",
       "rel": "source",
       "label:assets": [
@@ -323,33 +323,33 @@
     },
     {
       "title": "Raster SeaLake_984 with SeaLake class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/SeaLake/SeaLake_984.tif",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/SeaLake/SeaLake_984.tif",
       "type": "image/tiff; application=geotiff",
       "rel": "derived_from",
       "ml-aoi:role": "feature"
     },
     {
       "rel": "root",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/catalog.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/catalog.json",
       "type": "application/json"
     },
     {
       "rel": "parent",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/train/collection.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/train/collection.json",
       "type": "application/json",
       "title": "EuroSAT STAC Collection with samples from 'train' split.",
       "ml-aoi:split": "train"
     },
     {
       "rel": "collection",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/train/collection.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/train/collection.json",
       "type": "application/json",
       "title": "EuroSAT STAC Collection with samples from 'train' split.",
       "ml-aoi:split": "train"
     },
     {
       "rel": "self",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/train/item-59.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/train/item-59.json",
       "type": "application/geo+json"
     }
   ]

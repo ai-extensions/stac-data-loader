@@ -23,24 +23,24 @@
     "coordinates": [
       [
         [
-          -7.488752594660516,
-          0.0003427460013522211
+          -0.9722286709348552,
+          38.00107820257813
         ],
         [
-          -7.488752594660542,
-          0.00034279916512119316
+          -0.9722286709348552,
+          38.006972598236366
         ],
         [
-          -7.488752661310109,
-          0.0003427991650896763
+          -0.9796680715640781,
+          38.006972598236366
         ],
         [
-          -7.488752661310083,
-          0.00034274600132070933
+          -0.9796680715640781,
+          38.00107820257813
         ],
         [
-          -7.488752594660516,
-          0.0003427460013522211
+          -0.9722286709348552,
+          38.00107820257813
         ]
       ]
     ]
@@ -48,17 +48,17 @@
   "assets": {
     "labels": {
       "title": "Labels for image PermanentCrop_2437 with PermanentCrop class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/label/PermanentCrop/PermanentCrop_2437.geojson",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/label/PermanentCrop/PermanentCrop_2437.geojson",
       "type": "application/geo+json",
       "roles": [
         "data"
       ],
-      "file:size": 765,
+      "file:size": 750,
       "ml-aoi:role": "label"
     },
     "raster": {
       "title": "Raster PermanentCrop_2437 with PermanentCrop class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/PermanentCrop/PermanentCrop_2437.tif",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/PermanentCrop/PermanentCrop_2437.tif",
       "type": "image/tiff; application=geotiff",
       "raster:bands": [
         {
@@ -149,7 +149,7 @@
     },
     "thumbnail": {
       "title": "Preview of PermanentCrop_2437.",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/PermanentCrop/PermanentCrop_2437.png",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/PermanentCrop/PermanentCrop_2437.png",
       "type": "image/png",
       "roles": [
         "thumbnail",
@@ -180,9 +180,9 @@
   },
   "collection": "EuroSAT-subset-train",
   "properties": {
-    "datetime": "2023-11-10T01:51:23.840486+00:00",
+    "datetime": "2023-12-19T16:11:18.978479+00:00",
     "license": "MIT",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "label:properties": [
       "class"
     ],
@@ -306,13 +306,13 @@
   "links": [
     {
       "title": "Preview of PermanentCrop_2437.",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/PermanentCrop/PermanentCrop_2437.png",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/PermanentCrop/PermanentCrop_2437.png",
       "type": "image/png",
       "rel": "thumbnail"
     },
     {
       "title": "Raster PermanentCrop_2437 with PermanentCrop class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/PermanentCrop/PermanentCrop_2437.tif",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/PermanentCrop/PermanentCrop_2437.tif",
       "type": "image/tiff; application=geotiff",
       "rel": "source",
       "label:assets": [
@@ -323,33 +323,33 @@
     },
     {
       "title": "Raster PermanentCrop_2437 with PermanentCrop class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/PermanentCrop/PermanentCrop_2437.tif",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/PermanentCrop/PermanentCrop_2437.tif",
       "type": "image/tiff; application=geotiff",
       "rel": "derived_from",
       "ml-aoi:role": "feature"
     },
     {
       "rel": "root",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/catalog.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/catalog.json",
       "type": "application/json"
     },
     {
       "rel": "parent",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/train/collection.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/train/collection.json",
       "type": "application/json",
       "title": "EuroSAT STAC Collection with samples from 'train' split.",
       "ml-aoi:split": "train"
     },
     {
       "rel": "collection",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/train/collection.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/train/collection.json",
       "type": "application/json",
       "title": "EuroSAT STAC Collection with samples from 'train' split.",
       "ml-aoi:split": "train"
     },
     {
       "rel": "self",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/train/item-39.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/train/item-39.json",
       "type": "application/geo+json"
     }
   ]

@@ -23,24 +23,24 @@
     "coordinates": [
       [
         [
-          22.511506175937363,
-          0.0004076255369216701
+          27.911651652899923,
+          45.19441310936135
         ],
         [
-          22.511506175937335,
-          0.00040767798041116686
+          27.911651652899923,
+          45.20022764381647
         ],
         [
-          22.511506102009555,
-          0.0004076779803695944
+          27.903399863361784,
+          45.20022764381647
         ],
         [
-          22.511506102009584,
-          0.0004076255368801029
+          27.903399863361784,
+          45.19441310936135
         ],
         [
-          22.511506175937363,
-          0.0004076255369216701
+          27.911651652899923,
+          45.19441310936135
         ]
       ]
     ]
@@ -48,17 +48,17 @@
   "assets": {
     "labels": {
       "title": "Labels for image Industrial_2197 with Industrial class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/label/Industrial/Industrial_2197.geojson",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/label/Industrial/Industrial_2197.geojson",
       "type": "application/geo+json",
       "roles": [
         "data"
       ],
-      "file:size": 761,
+      "file:size": 740,
       "ml-aoi:role": "label"
     },
     "raster": {
       "title": "Raster Industrial_2197 with Industrial class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/Industrial/Industrial_2197.tif",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/Industrial/Industrial_2197.tif",
       "type": "image/tiff; application=geotiff",
       "raster:bands": [
         {
@@ -149,7 +149,7 @@
     },
     "thumbnail": {
       "title": "Preview of Industrial_2197.",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/Industrial/Industrial_2197.png",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/Industrial/Industrial_2197.png",
       "type": "image/png",
       "roles": [
         "thumbnail",
@@ -180,9 +180,9 @@
   },
   "collection": "EuroSAT-subset-train",
   "properties": {
-    "datetime": "2023-11-10T01:51:22.823307+00:00",
+    "datetime": "2023-12-19T16:11:17.964939+00:00",
     "license": "MIT",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "label:properties": [
       "class"
     ],
@@ -306,13 +306,13 @@
   "links": [
     {
       "title": "Preview of Industrial_2197.",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/Industrial/Industrial_2197.png",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/Industrial/Industrial_2197.png",
       "type": "image/png",
       "rel": "thumbnail"
     },
     {
       "title": "Raster Industrial_2197 with Industrial class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/Industrial/Industrial_2197.tif",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/Industrial/Industrial_2197.tif",
       "type": "image/tiff; application=geotiff",
       "rel": "source",
       "label:assets": [
@@ -323,33 +323,33 @@
     },
     {
       "title": "Raster Industrial_2197 with Industrial class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/Industrial/Industrial_2197.tif",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/Industrial/Industrial_2197.tif",
       "type": "image/tiff; application=geotiff",
       "rel": "derived_from",
       "ml-aoi:role": "feature"
     },
     {
       "rel": "root",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/catalog.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/catalog.json",
       "type": "application/json"
     },
     {
       "rel": "parent",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/train/collection.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/train/collection.json",
       "type": "application/json",
       "title": "EuroSAT STAC Collection with samples from 'train' split.",
       "ml-aoi:split": "train"
     },
     {
       "rel": "collection",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/train/collection.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/train/collection.json",
       "type": "application/json",
       "title": "EuroSAT STAC Collection with samples from 'train' split.",
       "ml-aoi:split": "train"
     },
     {
       "rel": "self",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/train/item-27.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/train/item-27.json",
       "type": "application/geo+json"
     }
   ]

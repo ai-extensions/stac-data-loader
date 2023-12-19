@@ -23,24 +23,24 @@
     "coordinates": [
       [
         [
-          28.51155096021155,
-          0.00031659647796272267
+          32.910449406756946,
+          35.10180259605005
         ],
         [
-          28.511550960211522,
-          0.00031664858669623206
+          32.910449406756946,
+          35.10758001495549
         ],
         [
-          28.51155089724389,
-          0.0003166485866687297
+          32.90342098433837,
+          35.10758001495549
         ],
         [
-          28.511550897243907,
-          0.0003165964779352248
+          32.90342098433837,
+          35.10180259605005
         ],
         [
-          28.51155096021155,
-          0.00031659647796272267
+          32.910449406756946,
+          35.10180259605005
         ]
       ]
     ]
@@ -48,17 +48,17 @@
   "assets": {
     "labels": {
       "title": "Labels for image HerbaceousVegetation_2624 with HerbaceousVegetation class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/label/HerbaceousVegetation/HerbaceousVegetation_2624.geojson",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/label/HerbaceousVegetation/HerbaceousVegetation_2624.geojson",
       "type": "application/geo+json",
       "roles": [
         "data"
       ],
-      "file:size": 770,
+      "file:size": 748,
       "ml-aoi:role": "label"
     },
     "raster": {
       "title": "Raster HerbaceousVegetation_2624 with HerbaceousVegetation class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/HerbaceousVegetation/HerbaceousVegetation_2624.tif",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/HerbaceousVegetation/HerbaceousVegetation_2624.tif",
       "type": "image/tiff; application=geotiff",
       "raster:bands": [
         {
@@ -149,7 +149,7 @@
     },
     "thumbnail": {
       "title": "Preview of HerbaceousVegetation_2624.",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/HerbaceousVegetation/HerbaceousVegetation_2624.png",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/HerbaceousVegetation/HerbaceousVegetation_2624.png",
       "type": "image/png",
       "roles": [
         "thumbnail",
@@ -180,9 +180,9 @@
   },
   "collection": "EuroSAT-subset-test",
   "properties": {
-    "datetime": "2023-11-10T01:51:28.086566+00:00",
+    "datetime": "2023-12-19T16:11:22.839682+00:00",
     "license": "MIT",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "label:properties": [
       "class"
     ],
@@ -306,13 +306,13 @@
   "links": [
     {
       "title": "Preview of HerbaceousVegetation_2624.",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/HerbaceousVegetation/HerbaceousVegetation_2624.png",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/png/HerbaceousVegetation/HerbaceousVegetation_2624.png",
       "type": "image/png",
       "rel": "thumbnail"
     },
     {
       "title": "Raster HerbaceousVegetation_2624 with HerbaceousVegetation class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/HerbaceousVegetation/HerbaceousVegetation_2624.tif",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/HerbaceousVegetation/HerbaceousVegetation_2624.tif",
       "type": "image/tiff; application=geotiff",
       "rel": "source",
       "label:assets": [
@@ -323,33 +323,33 @@
     },
     {
       "title": "Raster HerbaceousVegetation_2624 with HerbaceousVegetation class",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/HerbaceousVegetation/HerbaceousVegetation_2624.tif",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/data/subset/ds/images/remote_sensing/otherDatasets/sentinel_2/tif/HerbaceousVegetation/HerbaceousVegetation_2624.tif",
       "type": "image/tiff; application=geotiff",
       "rel": "derived_from",
       "ml-aoi:role": "feature"
     },
     {
       "rel": "root",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/catalog.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/catalog.json",
       "type": "application/json"
     },
     {
       "rel": "parent",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/test/collection.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/test/collection.json",
       "type": "application/json",
       "title": "EuroSAT STAC Collection with samples from 'test' split.",
       "ml-aoi:split": "test"
     },
     {
       "rel": "collection",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/test/collection.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/test/collection.json",
       "type": "application/json",
       "title": "EuroSAT STAC Collection with samples from 'test' split.",
       "ml-aoi:split": "test"
     },
     {
       "rel": "self",
-      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.4.0/data/EuroSAT/stac/subset/test/item-5.json",
+      "href": "https://raw.githubusercontent.com/ai-extensions/stac-data-loader/0.5.0/data/EuroSAT/stac/subset/test/item-5.json",
       "type": "application/geo+json"
     }
   ]
