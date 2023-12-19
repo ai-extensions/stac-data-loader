@@ -4,8 +4,15 @@ Changes
 [Latest](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader)
 -------------------------------------------------------------------------------------------------------------
 
-[//]: <> (Remove when new items added)
-- No changes recorded yet.
+- Add STAC Extension [`stats`](https://github.com/stac-extensions/stats) to `EuroSAT` results to provide a metric
+  about the number of samples in the dataset.
+- Add distinct `CATALOG_STAC_URL` and `CATALOG_DATA_URL` configuration options to allow referencing to distinct
+  endpoints for STAC Catalog, Collections and Items, and their referenced STAC Assets since metadata and actual
+  assets data are most often than not hosted by different servers (i.e.: STAC API endpoints vs cloud/data provider).
+- Add more details guiding post-generation steps to upload and reference `EuroSAT` data to a server
+  using the reference [STAC-populator](https://github.com/crim-ca/stac-populator) tool with `DirectoryLoader`.
+- Fix `bbox` CRS calculation in `stac_eurosat` notebook causing STAC Collections and Items to report invalid geospatial
+  locations.
 
 [0.4.0](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader/-/tree/0.4.0) (2023-11-09)
 -------------------------------------------------------------------------------------------------------------
