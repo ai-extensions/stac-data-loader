@@ -4,6 +4,12 @@ Changes
 [Latest](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader)
 -------------------------------------------------------------------------------------------------------------
 
+[//]: <> (Remove when new items added)
+- No changes recorded yet.
+
+[0.5.0](https://gitlab.com/crim.ca/clients/terradue/stac-dataloader/-/tree/0.5.0) (2023-12-19)
+-------------------------------------------------------------------------------------------------------------
+
 - Add STAC Extension [`stats`](https://github.com/stac-extensions/stats) to `EuroSAT` results to provide a metric
   about the number of samples in the dataset.
 - Add distinct `CATALOG_STAC_URL` and `CATALOG_DATA_URL` configuration options to allow referencing to distinct
